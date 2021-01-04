@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"address","name":"poolAddress","type":"address"}],"name":"addIPool","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isRecognizedPool","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}]

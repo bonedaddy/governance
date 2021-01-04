@@ -8,6 +8,11 @@ const { InfuraProvider } = require('@ethersproject/providers');
 const { fromPrivateKey } = require('ethereumjs-wallet');
 const { randomBytes } = require('crypto');
 const { usePlugin } = require('@nomiclabs/buidler/config');
+require('buidler-abi-exporter');
+
+abiExporter: {
+  path: './abi'
+}
 
 usePlugin('@nomiclabs/buidler-waffle');
 usePlugin('@nomiclabs/buidler-etherscan');

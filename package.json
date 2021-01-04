@@ -25,7 +25,6 @@
     "prepare:team-vesting": "yarn prepare-build --contracts DelegatingVester",
     "prepare:treasury-lock": "yarn prepare-build --contracts TreasuryLock",
     "prepare:treasury-vester": "yarn prepare-build --contracts TreasuryVester",
-
     "deploy:rinkeby": "buidler --network rinkeby deploy",
     "deploy:mainnet": "buidler --network mainnet deploy",
     "deploy:ndx": "yarn prepare:ndx && yarn deploy:mainnet --tags Ndx",
@@ -36,7 +35,6 @@
     "deploy:team-vesting": "yarn prepare:team-vesting && yarn deploy:mainnet --tags DelegatingVester",
     "deploy:treasury-lock": "yarn prepare:treasury-lock && yarn deploy:mainnet --tags TreasuryLock",
     "deploy:treasury-vester": "yarn prepare:treasury-vester && yarn deploy:mainnet --tags TreasuryVester",
-
     "build": "yarn clean:build && buidler compile",
     "coverage": "buidler coverage --network coverage --solcoverjs ./.solcover.js",
     "test": "buidler test",
@@ -48,7 +46,8 @@
     "@indexed-finance/uniswap-deployments": "^1.0.2",
     "@openzeppelin/contracts": "^3.2.0",
     "@uniswap/v2-core": "^1.0.1",
-    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "buidler-abi-exporter": "^1.0.1"
   },
   "devDependencies": {
     "@ethersproject/providers": "^5.0.9",

@@ -2,6 +2,7 @@
   "compilerType": "solcjs",
   "compilerVersion": "./node_modules/solc",
   "outputType": "all",
+  "outputDirectory": "abi",
   "compilerOptions": {
     "outputSelection": {
       "*": {
